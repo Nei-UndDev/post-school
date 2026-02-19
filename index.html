@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post : School • Elyssium RP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<!-- ===== INTRO OVERLAY ===== -->
+<div id="intro-overlay">
+    <div id="terminal-phase">
+        <div class="terminal-line t-dim" id="tl1">// ELYSSIUM CITY NETWORK v2.1</div>
+        <div class="terminal-line t-dim" id="tl2">// INITIALIZING SECURE CONNECTION...</div>
+        <div class="terminal-line" id="tl3">&gt; AUTHENTICATING NODE: POST_SCHOOL_001</div>
+        <div class="terminal-line t-bright" id="tl4">&gt; ACCESS GRANTED ████████████ 100%</div>
+        <div class="terminal-line t-warn" id="tl5">&gt; WARNING: FASE 1 — SLICE OF LIFE ACTIVE</div>
+        <div class="terminal-line t-success" id="tl6">&gt; WELCOME TO ELYSSIUM <span class="terminal-cursor"></span></div>
+    </div>
+    <div id="glitch-phase">
+        <div class="glitch-bar" style="top:15%;height:2px"></div>
+        <div class="glitch-bar" style="top:28%;height:4px"></div>
+        <div class="glitch-bar" style="top:44%;height:1px"></div>
+        <div class="glitch-bar" style="top:62%;height:3px"></div>
+        <div class="glitch-bar" style="top:78%;height:2px"></div>
+        <div class="glitch-bar" style="top:91%;height:5px"></div>
+    </div>
+    <div id="gate-phase">
+        <div class="gate-bg"></div>
+        <div class="gate-arch">
+            <div class="gate-sign">
+                <span class="gate-sign-text">POST : SCHOOL</span>
+                <span class="gate-sign-sub">ELYSSIUM ACADEMY • EST. 2026</span>
+            </div>
+            <div class="gate-columns">
+                <div class="gate-column"><div class="gate-lantern"></div></div>
+                <div class="gate-column"><div class="gate-lantern"></div></div>
+            </div>
+        </div>
+        <div class="gate-doors" id="gateDoors">
+            <div class="gate-door left" id="doorLeft">
+                <div class="door-bars">
+                    <div class="door-bar"></div><div class="door-bar"></div>
+                    <div class="door-bar"></div><div class="door-bar"></div>
+                    <div class="door-bar"></div>
+                </div>
+            </div>
+            <div class="gate-door right" id="doorRight">
+                <div class="door-bars">
+                    <div class="door-bar"></div><div class="door-bar"></div>
+                    <div class="door-bar"></div><div class="door-bar"></div>
+                    <div class="door-bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="gate-seam-glow" id="seamGlow"></div>
+        <div class="gate-ground"></div>
+        <div class="gate-logo-reveal" id="logoReveal">
+            <div class="reveal-logo-text">WELCOME</div>
+            <div class="reveal-logo-sub">SISWA TERPILIH</div>
+        </div>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container nav-content">
+        <div class="logo">
+            <div class="logo-icon">P:S</div>
+            <div class="logo-text">Post : School</div>
+            <span class="logo-badge">FASE 1 • SOL</span>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Beranda</a>
+            <a href="#elyssium">Elyssium</a>
+            <a href="#rules">Aturan</a>
+            <a href="#mechanics">Tata Cara RP</a>
+            <a href="#idcard">ID Card</a>
+            <a href="#sistem">Tier & SPK</a>
+            <a href="#asa">Akuisisi Skill</a>
+            <a href="#relationship">Relasi</a>
+            <a href="#join" class="btn-wa-nav">📱 Gabung WA</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">🏠 Beranda</a>
+        <a href="#elyssium">🌆 Elyssium</a>
+        <a href="#rules">📜 Aturan</a>
+        <a href="#mechanics">🎭 Tata Cara RP</a>
+        <a href="#idcard">🪪 ID Card</a>
+        <a href="#sistem">⚔️ Tier & SPK</a>
+        <a href="#asa">✨ Akuisisi Skill</a>
+        <a href="#relationship">💞 Relasi</a>
+        <a href="#join">📱 Gabung WA</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-grid">
+        <div class="hero-content">
+            <div class="hero-tag">🏛️ KOTA ELYSSIUM • EST. 2026</div>
+            <h1>Dimana <span class="gradient-text">Keindahan</span> Menutupi <span class="gradient-text">Intrik</span></h1>
+            <p class="hero-desc">
+                Didirikan awal Abad ke-21 oleh konsorsium elit global "The Founders" sebagai model ideal tata kota masa depan. Prinsip utilitarianism yang ketat: semua aspek harus menghasilkan efisiensi tertinggi.
+            </p>
+            <div class="city-stats">
+                <div class="city-stat-item">
+                    <div class="city-stat-value">64 km²</div>
+                    <div class="city-stat-label">Luas Total</div>
+                </div>
+                <div class="city-stat-item">
+                    <div class="city-stat-value">5</div>
+                    <div class="city-stat-label">Distrik</div>
+                </div>
+                <div class="city-stat-item">
+                    <div class="city-stat-value">4 km</div>
+                    <div class="city-stat-label">Pusat ke Distrik</div>
+                </div>
+                <div class="city-stat-item">
+                    <div class="city-stat-value">16 km²</div>
+                    <div class="city-stat-label">Per Distrik</div>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#idcard" class="btn-primary">📋 Lihat ID Card</a>
+                <a href="#join" class="btn-outline">📱 Gabung Komunitas</a>
+            </div>
+        </div>
+        <div class="distrik-grid">
+            <div class="distrik-title"><span>🚇</span> 5 DISTRIK ELYSSIUM</div>
+            <div class="distrik-list">
+                <div class="distrik-item">
+                    <div class="distrik-name">🏛️ PUSAT KOTA</div>
+                    <div class="distrik-desc">Stasiun utama, administrasi & pusat kekuasaan</div>
+                </div>
+                <div class="distrik-item">
+                    <div class="distrik-name">🏭 UTARA</div>
+                    <div class="distrik-desc">Distrik industri & pendidikan</div>
+                </div>
+                <div class="distrik-item">
+                    <div class="distrik-name">🌃 SELATAN</div>
+                    <div class="distrik-desc">Hiburan & kehidupan malam</div>
+                </div>
+                <div class="distrik-item">
+                    <div class="distrik-name">🏰 TIMUR</div>
+                    <div class="distrik-desc">Perumahan elite & kawasan Upscale</div>
+                </div>
+                <div class="distrik-item">
+                    <div class="distrik-name">🏪 BARAT</div>
+                    <div class="distrik-desc">Distrik komersial & pasar</div>
+                </div>
+            </div>
+            <p class="distrik-footer">⚡ 5 Stasiun kereta: Pusat, Utara, Barat, Timur, Selatan</p>
+        </div>
+    </div>
+</section>
+
+<!-- QUOTE SECTION -->
+<section class="quote-section">
+    <div class="container">
+        <div class="quote-container">
+            <div class="quote-mark">"</div>
+            <h2 class="quote-text">MASA LALU ADALAH KEKUATANMU:<br><span class="quote-highlight">UKIRLAH TAKDIRMU</span></h2>
+            <div class="quote-author">— Post : School —</div>
+        </div>
+    </div>
+</section>
+
+<!-- ANNOUNCEMENT -->
+<section class="announcement" id="elyssium">
+    <div class="container">
+        <div class="announcement-card">
+            <div class="decoration decoration-1"></div>
+            <div class="decoration decoration-2"></div>
+            <div class="announcement-header">
+                <span class="glitch-text">⚡ PERHATIAN, SISWA TERPILIH ⚡</span>
+            </div>
+            <div class="announcement-content">
+                <p class="announcement-desc">Di Post School, identitas Anda jauh lebih berharga daripada hanya sekedar nama dan nomor.</p>
+                <div class="announcement-grid">
+                    <div class="announcement-item">
+                        <div class="item-icon">📜</div>
+                        <h4>Masa Lalu Adalah Cetak Biru</h4>
+                        <p>Masa lalu yang Anda ciptakan adalah cetak biru untuk masa depan Anda dalam permainan.</p>
+                    </div>
+                    <div class="announcement-item">
+                        <div class="item-icon">💎</div>
+                        <h4>Setiap Pilihan Adalah Investasi</h4>
+                        <p>Setiap pilihan adalah investasi, dan setiap rahasia adalah bom waktu.</p>
+                    </div>
+                    <div class="announcement-item">
+                        <div class="item-icon">🎭</div>
+                        <h4>Narasi Latar Belakang</h4>
+                        <p>Pilihan dalam narasi latar belakang akan menentukan jalan cerita atau mengubahnya.</p>
+                    </div>
+                </div>
+                <div class="announcement-footer">
+                    <p class="footer-text">✨ Kami menunggu takdir yang Anda ciptakan.</p>
+                    <p class="footer-note">Sebelum mengisi, buat background karaktermu dan kirim ke GM/Admin secara pribadi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LOKASI SENSITIF -->
+<section class="sensitive-locations">
+    <div class="container">
+        <h2 class="section-title">🔒 Lokasi Sensitif Elyssium</h2>
+        <div class="section-sub">Lokasi berikut memerlukan tujuan plot yang kuat. RP di sini bisa memicu respons NPC dari pihak berwenang kota.</div>
+        <div class="loc-grid">
+            <div class="loc-card">
+                <div class="loc-icon-big">🏢</div>
+                <div class="loc-info">
+                    <h3>Administration Block</h3>
+                    <p>Pusat dokumen rahasia dan kebijakan kota. Hanya boleh dimasuki dengan tujuan plot sangat kuat — mencari dokumen rahasia, infiltrasi, atau misi GM-approved.</p>
+                    <span class="loc-tag danger-tag">⚠️ Perlu Izin GM</span>
+                </div>
+            </div>
+            <div class="loc-card">
+                <div class="loc-icon-big">🌲</div>
+                <div class="loc-info">
+                    <h3>The Whispering Grove</h3>
+                    <p>Hutan misterius di pinggiran kota. Tempat pertemuan terlarang dan ritual gelap. Karakter yang masuk tanpa alasan kuat akan dicurigai pihak berwenang.</p>
+                    <span class="loc-tag warning-tag">🌑 Lokasi Misterius</span>
+                </div>
+            </div>
+            <div class="loc-card">
+                <div class="loc-icon-big">🚔</div>
+                <div class="loc-info">
+                    <h3>Metropolitan Precinct</h3>
+                    <p>Markas kepolisian Elyssium. Plot yang melibatkan kerusakan properti serius atau pelanggaran hukum berat <strong>wajib dikonfirmasi GM</strong> — bisa memicu NPC polisi aktif.</p>
+                    <span class="loc-tag danger-tag">🚨 NPC Aktif</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BACKSTORY TIPS -->
+<section class="backstory-tips">
+    <div class="container">
+        <h2 class="section-title">📖 Panduan Latar Belakang Karakter</h2>
+        <div class="section-sub">Kirim ke GM/Admin secara pribadi (PC) sebelum mendaftar. Latar belakang yang kuat = pengalaman RP yang lebih kaya!</div>
+        <div class="tips-grid">
+            <div class="tip-card">
+                <div class="tip-number">01</div>
+                <h4>Identitas & Asal</h4>
+                <p>Siapa kamu sebelum masuk Post School? Dari distrik mana? Keluarga seperti apa?</p>
+                <ul class="tip-list">
+                    <li>Nama lengkap & panggilan</li>
+                    <li>Tempat tinggal asal</li>
+                    <li>Latar belakang keluarga</li>
+                </ul>
+            </div>
+            <div class="tip-card">
+                <div class="tip-number">02</div>
+                <h4>Rahasia & Luka Masa Lalu</h4>
+                <p>Setiap karakter punya rahasia. Ini bisa jadi bom waktu atau kekuatan terpendam.</p>
+                <ul class="tip-list">
+                    <li>Kejadian traumatis</li>
+                    <li>Rahasia yang disembunyikan</li>
+                    <li>Hubungan masa lalu</li>
+                </ul>
+            </div>
+            <div class="tip-card">
+                <div class="tip-number">03</div>
+                <h4>Motivasi & Tujuan</h4>
+                <p>Apa yang mendorong karaktermu? Apa yang ingin dicapai di Post School?</p>
+                <ul class="tip-list">
+                    <li>Tujuan jangka pendek</li>
+                    <li>Ambisi jangka panjang</li>
+                    <li>Hal yang paling ditakuti</li>
+                </ul>
+            </div>
+            <div class="tip-card">
+                <div class="tip-number">04</div>
+                <h4>Koneksi & Hubungan</h4>
+                <p>Apakah karaktermu sudah mengenal seseorang sebelumnya? Musuh atau teman lama?</p>
+                <ul class="tip-list">
+                    <li>Teman lama / musuh bebuyutan</li>
+                    <li>Utang budi atau dendam</li>
+                    <li>Janji yang harus ditepati</li>
+                </ul>
+            </div>
+        </div>
+        <div class="warning-message">⚠️ Latar belakang yang kuat = karakter yang lebih hidup. Jangan ragu untuk berkreasi!</div>
+    </div>
+</section>
+
+<!-- RULES -->
+<section id="rules" class="rules">
+    <div class="container">
+        <h2 class="section-title">📜 Kode Etik Elyssium</h2>
+        <div class="section-sub">Fase 1: Slice of Life — Bangun hubungan, cari aset, eksplorasi. Baca & pahami semua aturan sebelum mulai RP.</div>
+        <div class="rules-grid">
+            <div class="rule-card">
+                <div class="rule-icon">🚫</div>
+                <h3>No Metagaming</h3>
+                <p>Obrolan OOC <strong>tidak boleh</strong> memengaruhi keputusan karakter di RP. Metagaming = teguran/hukuman dari GM. Toleransi nol untuk SARA, hate speech, dan bullying.</p>
+            </div>
+            <div class="rule-card">
+                <div class="rule-icon">⚔️</div>
+                <h3>Sistem Aksi</h3>
+                <p>Keberhasilan aksi (berkelahi, meretas, dll) dinilai GM berdasarkan Tier karaktermu. HT nyaris sempurna, LT sangat rentan gagal.</p>
+            </div>
+            <div class="rule-card">
+                <div class="rule-icon">🗺️</div>
+                <h3>Akurasi Lokasi</h3>
+                <p>RP hanya di grup lokasi yang relevan. Wajib narasi tag perpindahan. Lokasi sensitif butuh tujuan plot kuat dan konfirmasi GM.</p>
+            </div>
+            <div class="rule-card">
+                <div class="rule-icon">⏸️</div>
+                <h3>Sistem Hiatus</h3>
+                <p>Tidak aktif ≥ 48 jam? <strong>Wajib lapor Admin</strong> untuk status Hiatus. Karakter tanpa izin dianggap rentan terhadap plot eksternal!</p>
+            </div>
+            <div class="rule-card">
+                <div class="rule-icon">🎭</div>
+                <h3>Konsistensi Karakter</h3>
+                <p>RP harus konsisten dengan data di Academy ID Card. Karakter tidak bisa tiba-tiba punya kemampuan yang belum terdaftar.</p>
+            </div>
+            <div class="rule-card">
+                <div class="rule-icon">🧑‍⚖️</div>
+                <h3>Klarifikasi GM</h3>
+                <p>Plot kerusakan properti serius atau pelanggaran hukum berat <strong>wajib dikonfirmasi GM/Admin</strong> sebelum dijalankan dalam RP.</p>
+            </div>
+        </div>
+        <div class="warning-message">⚠️ Wajib daftar di kantor pendaftaran sebelum RP. Kalau bingung, tanya di grup OOC!</div>
+    </div>
+</section>
+
+<!-- TATA CARA RP -->
+<section id="mechanics" class="mechanics">
+    <div class="container">
+        <h2 class="section-title">🎭 Tata Cara Roleplay</h2>
+        <div class="section-sub">Panduan lengkap tanda baca, format narasi, dan etika RP komunitas Post : School. Wajib dipahami sebelum mulai.</div>
+        <div class="mech-grid">
+            <div class="mech-item">
+                <div class="mech-header">
+                    <h3>Tanda Baca RP</h3>
+                    <span class="mech-badge">WAJIB PAHAM</span>
+                </div>
+                <div class="code-block">
+                    <code>&gt; (Tanda Lebih Besar)</code>
+                    <p class="example-text">Untuk aksi / aktivitas karakter</p>
+                    <div class="correct-example">✅ &gt; Aku minum di antara orang gila</div>
+                </div>
+                <div class="code-block">
+                    <code>) (Kurung Kanan)</code>
+                    <p class="example-text">OOC — kamu tidak sedang memainkan karakter</p>
+                    <div class="correct-example">✅ wkwk, afk dulu ya mau berak)</div>
+                </div>
+                <div class="code-block">
+                    <code>_teks_ (Garis Bawah)</code>
+                    <p class="example-text">Karakter berbicara dalam hati</p>
+                    <div class="correct-example">✅ _Kayaknya orang ini sakit deh.._</div>
+                </div>
+                <div class="code-block">
+                    <code>"teks" (Tanda Petik)</code>
+                    <p class="example-text">Dialog karakter — opsional, tapi dianjurkan</p>
+                    <div class="correct-example">✅ "Sial, kuat sekali!"</div>
+                </div>
+            </div>
+
+            <div class="mech-item">
+                <div class="mech-header">
+                    <h3>Jangan Godmod!</h3>
+                    <span class="mech-badge">PENTING</span>
+                </div>
+                <p style="color:var(--text-secondary);font-size:14px;margin-bottom:20px;line-height:1.7">Jangan menentukan hasil aksi untuk karakter orang lain. Narasi aksimu sampai titik aksinya saja — biarkan pemain lain merespons sendiri.</p>
+                <div class="wrong-example">
+                    ❌ <strong>SALAH:</strong><br>
+                    <em>&gt; Aku memukul dadamu sehingga kamu terpental dan pingsan karena menabrak tembok</em>
+                </div>
+                <div class="correct-example">
+                    ✅ <strong>BENAR:</strong><br>
+                    <em>&gt; Aku memukul dadamu dengan sekuat tenaga</em>
+                </div>
+                <div class="mech-tip">
+                    <div class="tip-title">💡 Tips Narasi</div>
+                    <p>Semakin detail & kreatif narasimu, semakin besar peluang GM memberi PP bonus. Gunakan deskripsi yang kaya — emosi, gerakan, ekspresi!</p>
+                </div>
+            </div>
+
+            <div class="mech-item">
+                <div class="mech-header">
+                    <h3>Hasil Aksi & Tier</h3>
+                    <span class="mech-badge">GM DECIDES</span>
+                </div>
+                <p style="color:var(--text-secondary);font-size:14px;margin-bottom:20px;line-height:1.7">GM menentukan keberhasilan aksi berdasarkan Hierarki Kekuatan Naratif (Tiering) karaktermu.</p>
+                <div class="tier-result-item success-result">
+                    <span class="tier-result-icon">👑</span>
+                    <div>
+                        <div class="tier-result-label">HT (High Tier)</div>
+                        <div class="tier-result-desc">Tingkat keberhasilan nyaris sempurna</div>
+                    </div>
+                </div>
+                <div class="tier-result-item danger-result">
+                    <span class="tier-result-icon">⚠️</span>
+                    <div>
+                        <div class="tier-result-label">LT (Low Tier)</div>
+                        <div class="tier-result-desc">Sangat rentan & sering gagal dalam kategori tersebut</div>
+                    </div>
+                </div>
+                <div class="mech-tip" style="margin-top:16px;">
+                    <div class="tip-title">⏱️ Waktu RP</div>
+                    <p>1 Hari RP = 24 jam waktu nyata. Semua aktivitas harus sinkron dengan siklus Admin.</p>
+                </div>
+            </div>
+
+            <div class="mech-item">
+                <div class="mech-header">
+                    <h3>Etika & Attitude</h3>
+                    <span class="mech-badge">WAJIB</span>
+                </div>
+                <div class="etika-list">
+                    <div class="etika-item"><span>🔐</span><p>Info OOC tidak boleh memengaruhi keputusan karakter (no metagaming)</p></div>
+                    <div class="etika-item"><span>🤝</span><p>Hormati pemain lain. Bedakan antara IC (In Character) dan OOC</p></div>
+                    <div class="etika-item"><span>❓</span><p>Dapat clue atau situasi tidak jelas? Langsung PC (pesan pribadi) ke GM/Admin</p></div>
+                    <div class="etika-item"><span>📝</span><p>Wajib daftar di kantor pendaftaran sebelum mulai RP apapun</p></div>
+                    <div class="etika-item"><span>🎯</span><p>Kritik boleh, tapi arahkan ke karakter — bukan ke pemain di baliknya</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ID CARD -->
+<section id="idcard" class="idcard">
+    <div class="container">
+        <h2 class="section-title">🪪 Template ID Card</h2>
+        <div class="section-sub">Copy template ini untuk daftar karakter kamu di grup pendaftaran. Isi semua kolom dengan data karaktermu.</div>
+        <div class="idcard-showcase">
+            <div class="idcard-preview">
+                <div class="idcard-header">
+                    <span class="idcard-title">POST : SCHOOL ID CARD</span>
+                    <span class="idcard-elysium">✦ Elyssium ✦</span>
+                </div>
+                <div class="idcard-content">
+                    <div class="idcard-row"><span class="idcard-label">Nama Lengkap :</span><span class="idcard-value">___________________</span></div>
+                    <div class="idcard-row"><span class="idcard-label">Umur :</span><span class="idcard-value">______</span></div>
+                    <div class="idcard-row"><span class="idcard-label">Jenis Kelamin :</span><span class="idcard-value">________</span></div>
+                    <div class="idcard-row"><span class="idcard-label">Tempat Tinggal :</span><span class="idcard-value">[Upscale / Biasa / Housing]</span></div>
+                    <div class="idcard-row"><span class="idcard-label">Kerja Paruh Waktu :</span><span class="idcard-value">________________</span></div>
+                </div>
+                <div class="idcard-divider"></div>
+                <div class="idcard-section">
+                    <h4>💰 KEUANGAN & KASTA</h4>
+                    <div class="idcard-row"><span class="idcard-label">Saldo Bank :</span><span class="idcard-value">Ᵽ _________</span></div>
+                    <div class="idcard-row"><span class="idcard-label">Uang Tunai :</span><span class="idcard-value">Ᵽ _________</span></div>
+                </div>
+                <div class="idcard-section">
+                    <h4>🎒 INVENTORY & ASET</h4>
+                    <div class="idcard-row"><span class="idcard-label">Kendaraan :</span><span class="idcard-value">[ - ]</span></div>
+                    <div class="idcard-row"><span class="idcard-label">Barang :</span><span class="idcard-value">1. ____ / 2. ____ / 3. ____</span></div>
+                </div>
+                <div class="idcard-section">
+                    <h4>👥 HUBUNGAN SOSIAL</h4>
+                    <div class="idcard-row"><span class="idcard-label">Koneksi :</span><span class="idcard-value">[1-2 Karakter yang sudah dikenal]</span></div>
+                </div>
+                <div class="idcard-section">
+                    <h4>🧠 KEKUATAN NARATIF</h4>
+                    <div class="idcard-row"><span class="idcard-label">Keahlian Utama :</span><span class="idcard-value">• _________ [Tier]</span></div>
+                    <div class="idcard-row"><span class="idcard-label">??? :</span><span class="idcard-value">[Hidden by GM]</span></div>
+                </div>
+                <div class="idcard-section">
+                    <h4>🏆 PRESTASI & AKTIVITAS</h4>
+                    <div class="idcard-row"><span class="idcard-label">Club/Ekskul :</span><span class="idcard-value">________</span></div>
+                    <div class="idcard-row"><span class="idcard-label">Level :</span><span class="idcard-value">Ketua Klub / Anggota Biasa</span></div>
+                </div>
+            </div>
+            <div class="template-actions">
+                <button class="btn-copy" id="copyTemplate">📋 Copy Template ID Card</button>
+                <p class="copy-hint">Klik tombol di atas → paste (Ctrl+V) di grup Registration</p>
+            </div>
+            <textarea id="idcardTemplate" class="hidden-template">*`━ ✦ Post : School ID CARD ✦ ━`*
+━━━━━━━━━━━━━━━━━━━
+`🔸 [IDENTITAS & LATAR BELAKANG]`
+*✦ Nama Lengkap :* 
+*✦ Umur :* 
+*✦ Jenis Kelamin:* 
+*✦ Tempat Tinggal :* [Upscale Residence/Perumahan Biasa/Housing]
+*✦ Pekerjaan Paruh Waktu:* []
+
+━━━━━━━━━━━━━━━━━━━
+`💰 [KEUANGAN & KASTA]`
+*✦ Saldo Bank : Ᵽ []*
+*✦ Uang Tunai : Ᵽ []*
+
+━━━━━━━━━━━━━━━━━━━
+`🎒 [INVENTORY & ASET]`
+*✦ Kendaraan Pribadi:* [-]
+*✦ Barang :*
+1.
+2.
+3.
+ 
+━━━━━━━━━━━━━━━━━━━
+`👥 [HUBUNGAN SOSIAL & EMOSIONAL]`
+*✦ Koneksi (Opsional):* [Sebutkan 1-2 Karakter yang sudah dikenal]
+
+━━━━━━━━━━━━━━━━━━━
+`🧠 [KEKUATAN NARATIF & KELEMAHAN]`
+*✦ Keahlian Utama:*
+- 
+*✦ ??? :*
+━━━━━━━━━━━━━━━━━━━
+`🏆 [PRESTASI & AKTIVITAS]`
+*✦ Club/Ekskul :*
+*✦ Level Keterlibatan :* [Contoh: Ketua Klub, Anggota Biasa]
+*✦ Achievement & Title :*
+
+━━━━━━━━━━━━━━━━━━━</textarea>
+        </div>
+    </div>
+</section>
+
+<!-- TIER SYSTEM -->
+<section id="sistem" class="tier-system">
+    <div class="container">
+        <h2 class="section-title">📊 Sistem Tier</h2>
+        <div class="section-sub">Mengukur penguasaan keahlian karakter — Fisik, Intelektual, Taktis, Finansial, Medis, dll. Setiap keahlian bisa punya tier masing-masing.</div>
+        <div class="tier-grid">
+            <div class="tier-card">
+                <h3>🔸 TIER 5–4 • AWAL</h3>
+                <div class="tier-list">
+                    <div class="tier-item"><span class="tier-tag">T5–LT</span><span class="tier-desc">Pemahaman mentah. Aktivasi sering gagal.</span></div>
+                    <div class="tier-item"><span class="tier-tag">T5–HT</span><span class="tier-desc">Bisa digunakan dengan sengaja. Kontrol dasar mulai terbentuk.</span></div>
+                    <div class="tier-item"><span class="tier-tag">T4–LT</span><span class="tier-desc">Penggunaan masih kaku. Mudah kehabisan energi/fokus.</span></div>
+                    <div class="tier-item"><span class="tier-tag">T4–HT</span><span class="tier-desc">Lebih stabil & efisien. Mulai pahami timing situasi sederhana.</span></div>
+                </div>
+            </div>
+            <div class="tier-card">
+                <h3>🔹 TIER 3–2 • MENENGAH</h3>
+                <div class="tier-list">
+                    <div class="tier-item"><span class="tier-tag">T3–LT</span><span class="tier-desc">Efek jelas & berdampak. Bisa ofensif/defensif. Butuh konsentrasi penuh.</span></div>
+                    <div class="tier-item"><span class="tier-tag">T3–HT</span><span class="tier-desc">Kontrol baik & fleksibel. Mulai berpikir taktis, bisa dikombinasikan.</span></div>
+                    <div class="tier-item"><span class="tier-tag">T2–LT</span><span class="tier-desc">Efek kuat & terarah. Sangat efisien, jarang salah.</span></div>
+                    <div class="tier-item"><span class="tier-tag">T2–HT</span><span class="tier-desc">Presisi sangat tinggi. Kendalikan situasi kompleks dengan efektif.</span></div>
+                </div>
+            </div>
+            <div class="tier-card master-card">
+                <h3>👑 TIER 1 • MASTER / GENIUS</h3>
+                <div class="tier-list">
+                    <div class="tier-item"><span class="tier-tag">T1–LT</span><span class="tier-desc">Penguasaan nyaris penuh. Efek luas & kompleks. Mampu baca & kontrol alur.</span></div>
+                    <div class="tier-item"><span class="tier-tag">T1–HT</span><span class="tier-desc">Kontrol mutlak. Penggunaan instingtif — tanpa perlu berpikir sama sekali.</span></div>
+                </div>
+                <div class="master-note">✦ Tier ini langka dan butuh progres panjang untuk dicapai.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SPK -->
+<section class="spk">
+    <div class="container">
+        <h2 class="section-title">📈 SPK — Sistem Progres Kumulatif</h2>
+        <div class="section-sub">Semua progres diukur dengan Persentase Progres (PP). Digunakan untuk naik Tier (butuh 100% PP) dan Akuisisi Skill Baru (lihat section ASA).</div>
+        <div class="spk-grid">
+            <div class="spk-card">
+                <h3>📝 SUMBER PP — NARASI</h3>
+                <ul class="pp-list">
+                    <li>
+                        <span class="pp-source">Log Entry / Long Text<br><small>Narasi tebal, detail, relevan lore/karakter</small></span>
+                        <span class="pp-value">+2% PP</span>
+                    </li>
+                    <li>
+                        <span class="pp-source">Analysis / Reflection Text<br><small>Refleksi mendalam, riset, analisis taktis</small></span>
+                        <span class="pp-value">+3% PP</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="spk-card">
+                <h3>⚔️ SUMBER PP — SKENARIO</h3>
+                <ul class="pp-list">
+                    <li><span class="pp-source">Kontribusi Besar (Main Scenario)</span><span class="pp-value">+10%</span></li>
+                    <li><span class="pp-source">Kontribusi Sedang (Main Scenario)</span><span class="pp-value">+7%</span></li>
+                    <li><span class="pp-source">Kontribusi Kecil (Main Scenario)</span><span class="pp-value">+5%</span></li>
+                    <li><span class="pp-source">Kontribusi Besar (Side Scenario)</span><span class="pp-value">+8%</span></li>
+                    <li><span class="pp-source">Kontribusi Sedang (Side Scenario)</span><span class="pp-value">+6%</span></li>
+                    <li><span class="pp-source">Kontribusi Kecil (Side Scenario)</span><span class="pp-value">+4%</span></li>
+                </ul>
+            </div>
+            <div class="spk-card">
+                <h3>📋 CONTOH PROGRES</h3>
+                <div class="example-progres">
+                    <p><span class="highlight">Zani</span> akuisisi Karambit (Major Combat — target 35%):</p>
+                    <ul>
+                        <li>Analisis rekaman pertarungan → +3%</li>
+                        <li>Interaksi mentor di SS → +6%</li>
+                        <li>Latihan dasar mandiri → +2%</li>
+                        <li>Gunakan Karambit di SS → +6%</li>
+                        <li>Refleksi kritis kegagalan → +3%</li>
+                        <li>Aktivitas lanjutan → +15%</li>
+                    </ul>
+                    <p class="success-note">✅ Total: 35% — Karambit resmi T5!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ASA — AKUISISI SKILL BARU -->
+<section id="asa" class="asa-section">
+    <div class="container">
+        <h2 class="section-title">✨ Sistem Akuisisi Skill Baru (ASA)</h2>
+        <div class="section-sub">Cara karaktermu mempelajari kemampuan baru dari nol. Tiga jenis skill dengan target PP berbeda, diikuti tahap Stability sebelum skill bisa dikembangkan lebih lanjut.</div>
+
+        <div class="asa-type-grid">
+            <div class="asa-card asa-minor">
+                <div class="asa-badge">MINOR</div>
+                <div class="asa-icon">🔧</div>
+                <h3>Utility / Advantage Skill</h3>
+                <p>Skill pendukung atau keunggulan kecil. Tidak berkaitan langsung dengan combat.</p>
+                <div class="asa-pp-display">
+                    <div class="asa-pp-number">20%</div>
+                    <div class="asa-pp-label">PP dibutuhkan</div>
+                </div>
+                <div class="asa-stability-info asa-stable">
+                    ✅ Langsung stabil di T5<br><small>Tidak perlu tahap Stability</small>
+                </div>
+            </div>
+
+            <div class="asa-card asa-major">
+                <div class="asa-badge">MAJOR</div>
+                <div class="asa-icon">⚔️</div>
+                <h3>Combat Skill</h3>
+                <p>Kemampuan pertarungan atau kemampuan ofensif/defensif yang signifikan dan berbahaya.</p>
+                <div class="asa-pp-display">
+                    <div class="asa-pp-number">35%</div>
+                    <div class="asa-pp-label">PP dibutuhkan</div>
+                </div>
+                <div class="asa-stability-info asa-unstable">
+                    ⚠️ T5 belum stabil<br><small>Butuh <strong>1 Aksi Sukses</strong> untuk naik ke T4</small>
+                </div>
+            </div>
+
+            <div class="asa-card asa-complex">
+                <div class="asa-badge">COMPLEX</div>
+                <div class="asa-icon">💎</div>
+                <h3>Rare / Complex Skill</h3>
+                <p>Kemampuan langka & kompleks yang sulit dikuasai dan sangat jarang dimiliki karakter.</p>
+                <div class="asa-pp-display">
+                    <div class="asa-pp-number">50%</div>
+                    <div class="asa-pp-label">PP dibutuhkan</div>
+                </div>
+                <div class="asa-stability-info asa-unstable">
+                    ⚠️ T5 belum stabil<br><small>Butuh <strong>2 Aksi Sukses</strong> untuk naik ke T4</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="asa-flow">
+            <h3>📍 Alur Tahap Stability (T5 → T4)</h3>
+            <div class="flow-steps">
+                <div class="flow-step">
+                    <div class="flow-step-num">1</div>
+                    <div class="flow-step-content">
+                        <h4>Kumpulkan PP</h4>
+                        <p>Sesuai target jenis skill (20% / 35% / 50%)</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-step-num">2</div>
+                    <div class="flow-step-content">
+                        <h4>Skill Terdaftar T5</h4>
+                        <p>Resmi tercatat di ID Card, tapi masih belum stabil</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-step-num">3</div>
+                    <div class="flow-step-content">
+                        <h4>Aksi Sukses</h4>
+                        <p>Gunakan skill di MS atau SS. Aksi harus: sukses, berdampak positif, & terbukti bukan kebetulan</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step flow-step-final">
+                    <div class="flow-step-num">✦</div>
+                    <div class="flow-step-content">
+                        <h4>Skill Stabil T4</h4>
+                        <p>Skill naik ke T4 & siap dikembangkan lebih lanjut via Sistem STEP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- RELATIONSHIP -->
+<section id="relationship" class="relationship">
+    <div class="container">
+        <h2 class="section-title">💞 Sistem Hubungan & Emosional</h2>
+        <div class="section-sub">Mengukur nilai taktis, psikologis, dan loyalitas antar karakter. Setiap peningkatan level butuh investasi emosional, informasi, dan risiko nyata.</div>
+
+        <div class="relation-tiers">
+            <div class="relation-tier-group">
+                <div class="relation-tier-label">I. OBSERVASI & KOMODITAS</div>
+                <div class="relation-grid-inner">
+                    <div class="relation-card">
+                        <h4>Lv.0 🚫 STRANGER</h4>
+                        <p>Tidak ada relasi. Risiko tinggi — musuh potensial. Interaksi nihil atau insidental.</p>
+                    </div>
+                    <div class="relation-card">
+                        <h4>Lv.1 👤 ACQUAINTANCE</h4>
+                        <p>Identitas dasar terdaftar. Fungsi sebagai sumber info publik. Interaksi sopan dan transaksional.</p>
+                    </div>
+                    <div class="relation-card">
+                        <h4>Lv.2 🤝 FAMILIAR</h4>
+                        <p>Pola perilaku ringan mulai teridentifikasi. Dapat diprediksi dalam rutinitas.</p>
+                    </div>
+                    <div class="relation-card">
+                        <h4>Lv.3 🔗 CASUAL BOND</h4>
+                        <p>Hubungan fungsional yang nyaman. Kerja sama non-kritis. Loyalitas sangat mudah beralih sisi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relation-tier-group">
+                <div class="relation-tier-label">II. KEPERCAYAAN & PENGARUH</div>
+                <div class="relation-grid-inner">
+                    <div class="relation-card">
+                        <h4>Lv.4 🛡️ TRUSTED COMPANION</h4>
+                        <p>Kepercayaan teruji dalam situasi normal. Bisa diandalkan sebagai back-up tanpa pengawasan ketat.</p>
+                    </div>
+                    <div class="relation-card">
+                        <h4>Lv.5 💡 CLOSE CONNECTION</h4>
+                        <p>Hubungan stabil & berarti. Konflik kecil tidak merusak ikatan — perlu betrayal besar untuk runtuh.</p>
+                    </div>
+                    <div class="relation-card">
+                        <h4>Lv.6 ❤️ DEEP BOND</h4>
+                        <p>Ikatan emosional/psikologis kuat. Saling memahami Flaw & Need karakter. Sulit digoyahkan rumor.</p>
+                    </div>
+                    <div class="relation-card">
+                        <h4>Lv.7 🗝️ INNER CIRCLE</h4>
+                        <p>Diprioritaskan di atas kepentingan lain. Menyimpan rahasia vital (Plot-Bending Data).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relation-tier-group">
+                <div class="relation-tier-label">III. ESENSI & LOYALITAS MUTLAK</div>
+                <div class="relation-grid-inner">
+                    <div class="relation-card relation-card-high">
+                        <h4>Lv.8 🔗 UNBREAKABLE BOND</h4>
+                        <p>Ikatan teruji melewati konflik kritis. Saling melindungi & ambil risiko besar secara default.</p>
+                    </div>
+                    <div class="relation-card relation-card-high">
+                        <h4>Lv.9 🌌 IRREPLACEABLE</h4>
+                        <p>Nilai emosional sangat tinggi. Kehilangan relasi ini → potensi mental breakdown karakter.</p>
+                    </div>
+                    <div class="relation-card relation-card-max">
+                        <h4>Lv.10 🔱 ABSOLUTE BOND</h4>
+                        <p>Kepercayaan total tanpa syarat. Keluarga Sejati / Saudara Batin. Kerusakan relasi ini = kerusakan inti eksistensi karakter itu sendiri.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JOIN -->
+<section id="join" class="join">
+    <div class="container">
+        <div class="join-card">
+            <h2>Yuk, jadi bagian dari Elyssium! ✨</h2>
+            <p>Buat karakter, eksplor plot, dan dapetin teman baru yang sefrekuensi.</p>
+            <div class="join-buttons">
+                <a href="https://chat.whatsapp.com/GSOX8JoIUZBHZ2ZdpmQFsI" target="_blank" class="btn-wa" id="joinWA">
+                    <span>📱</span> Gabung Grup WhatsApp
+                </a>
+                <a href="#rules" class="btn-outline">📜 Baca Aturan Lengkap</a>
+            </div>
+            <p class="join-stats">✅ 200+ member aktif · 5 Distrik · Tier T1–T5 · Relasi Lv.0–10</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-logo"><span class="gradient-text">POST : SCHOOL</span></div>
+        <div class="footer-links">
+            <a href="#home">Beranda</a>
+            <a href="#elyssium">Elyssium</a>
+            <a href="#rules">Aturan</a>
+            <a href="#mechanics">Tata Cara RP</a>
+            <a href="#idcard">ID Card</a>
+            <a href="#sistem">Tier & SPK</a>
+            <a href="#asa">Akuisisi Skill</a>
+            <a href="#relationship">Relasi</a>
+        </div>
+        <p class="footer-quote">"Kota di mana keindahan dan ketertiban menutupi jaringan intrik yang rumit"</p>
+        <p class="copyright">© 2026 Post : School — Fase 1: Slice of Life. Elyssium Universe.</p>
+        <p class="stats-footer">Luas 64 km² · 5 Distrik · Sistem Tier · SPK Progres · Relasi Lv.0–10</p>
+    </div>
+</footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>
