@@ -403,16 +403,45 @@
             playLogoChord();
         }, T.logoReveal);
 
-        // Phase 6: Fade out
+        // Phase 6a: PRE-WARM — unlock scroll & hint browser render konten
+        // dilakukan ~800ms sebelum fade supaya main content udah siap di GPU
+        setTimeout(() => {
+            document.body.style.overflow = '';
+            const hero = document.getElementById('home');
+            if (hero) {
+                void hero.offsetHeight; // force reflow sekali, pas overlay masih nutup
+            }
+            // Pause transition scroll reveal — biar nggak fire semua serentak
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+                el.style.transition = 'none';
+            });
+        }, T.fadeOut - (IS_MOBILE ? 600 : 800));
+
+        // Phase 6b: Fade out overlay + audio
         setTimeout(() => {
             overlay.classList.add('fade-out');
             fadeOutAudio();
         }, T.fadeOut);
 
-        // Phase 7: Remove DOM
+        // Phase 7a: pointer-events:none dulu — user bisa scroll sebelum overlay dihapus
+        // Ini bikin browser render konten secara natural, bukan dump sekaligus
+        setTimeout(() => {
+            overlay.style.pointerEvents = 'none';
+        }, T.fadeOut + 100);
+
+        // Phase 7b: Remove overlay dari DOM setelah fade kelar
+        // Jeda cukup panjang biar konten sudah fully rendered
         setTimeout(() => {
             overlay.remove();
             document.body.classList.remove('intro-active', 'intro-mobile');
+            // Re-aktifkan scroll reveal transitions
+            requestAnimationFrame(() => {
+                setTimeout(() => {
+                    document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+                        el.style.transition = '';
+                    });
+                }, 100);
+            });
         }, T.domRemove);
     }
 
