@@ -2315,3 +2315,76 @@ body.intro-active { overflow: hidden; }
     0%, 100% { opacity: 1; }
     50%       { opacity: 0; }
 }
+
+/* =============================================
+   MOBILE PERFORMANCE OPTIMIZATIONS
+   Class .intro-mobile ditambah saat IS_MOBILE = true
+   ============================================= */
+
+/* Matiin animasi lantern di mobile — berat di GPU */
+.intro-mobile .gate-lantern {
+    animation: none !important;
+    opacity: 1;
+}
+
+/* Matiin scanline scroll animation */
+.intro-mobile #intro-overlay::after {
+    animation: none !important;
+}
+
+/* Hapus blur dari seam glow — filter:blur() itu GPU killer */
+.intro-mobile .gate-seam-glow {
+    filter: none !important;
+    opacity: 0.4;
+}
+
+/* Simplify gate-bg di mobile — kurangi layer gradient */
+.intro-mobile .gate-bg {
+    background:
+        radial-gradient(ellipse 80% 30% at 50% 100%, rgba(30,58,95,0.4) 0%, transparent 70%),
+        linear-gradient(180deg, #020406 0%, #050c18 40%, #08142a 70%, #0a1825 100%) !important;
+}
+
+/* Matiin bangunan silhouette di mobile */
+.intro-mobile .gate-bg::before {
+    display: none !important;
+}
+
+/* Pintu gerbang — transisi lebih pendek di mobile */
+.intro-mobile .gate-door {
+    transition: transform 1.0s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Gate logo reveal transition lebih cepat */
+.intro-mobile .gate-logo-reveal {
+    transition: opacity 0.5s ease 0.2s !important;
+}
+
+/* Matiin reveal-on-scroll di mobile (hemat IntersectionObserver calls) */
+.intro-mobile .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* will-change hints untuk elemen yang dianimasi —
+   kasih tau GPU duluan supaya siap */
+.gate-door {
+    will-change: transform;
+}
+.gate-logo-reveal {
+    will-change: opacity;
+}
+#gate-phase {
+    will-change: opacity;
+}
+#terminal-phase {
+    will-change: opacity;
+}
+
+/* Matiin parallax di touch device via pointer: coarse */
+@media (pointer: coarse) {
+    .decoration {
+        transform: none !important;
+        transition: none !important;
+    }
+}
