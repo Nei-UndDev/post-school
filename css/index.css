@@ -2388,3 +2388,73 @@ body.intro-active { overflow: hidden; }
         transition: none !important;
     }
 }
+
+/* =============================================
+   TRANSITION JANK FIX
+   ============================================= */
+
+/* content-visibility: auto = browser skip render
+   section yang belum masuk viewport.
+   Drastis ngurangin initial paint cost */
+.spk, .asa-section, .relationship,
+.backstory-tips, .sensitive-locations,
+.tier-system, .mechanics {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 600px; /* estimasi tinggi section */
+}
+
+/* contain: layout = isolasi reflow per section
+   perubahan di satu section nggak ripple ke section lain */
+.rules, .idcard, .join {
+    contain: layout;
+}
+
+/* Overlay fade-out — pakai transform+opacity bukan filter
+   supaya GPU bisa composite tanpa reflow */
+#intro-overlay.fade-out {
+    animation: intro-fade-out 0.8s cubic-bezier(0.4, 0, 1, 1) forwards !important;
+    pointer-events: none;
+}
+
+@keyframes intro-fade-out {
+    0%   { opacity: 1;   transform: scale(1); }
+    100% { opacity: 0;   transform: scale(1.015); }
+}
+
+/* Hero section sudah pasti visible pertama —
+   jangan pakai reveal-on-scroll, langsung visible */
+#home .hero-content,
+#home .distrik-grid {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* Selama intro aktif, sembunyiin konten pakai visibility
+   bukan display:none — supaya browser tetap layout & render di background */
+body.intro-active .navbar,
+body.intro-active .hero,
+body.intro-active .quote-section,
+body.intro-active .announcement,
+body.intro-active .sensitive-locations,
+body.intro-active .backstory-tips,
+body.intro-active .rules,
+body.intro-active .mechanics,
+body.intro-active .idcard,
+body.intro-active .tier-system,
+body.intro-active .spk,
+body.intro-active .asa-section,
+body.intro-active .relationship,
+body.intro-active .join,
+body.intro-active footer {
+    visibility: hidden;     /* hidden = ter-render, tapi nggak keliatan */
+    pointer-events: none;
+}
+
+/* Pas intro selesai, visibility kembali normal dengan transisi mulus */
+body:not(.intro-active) .navbar,
+body:not(.intro-active) .hero,
+body:not(.intro-active) section,
+body:not(.intro-active) footer {
+    visibility: visible;
+    transition: visibility 0s;
+}
